@@ -1,0 +1,271 @@
+/* App.css */
+/* App.css */
+/* Styling for the left navigation bar */
+.left-nav {
+  background-color: #333; /* Background color of the left nav */
+  color: white;
+  width: 100px; /* Width of the left nav */
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.left-nav .nav-item {
+  cursor: pointer;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.left-nav .nav-item:hover {
+  background-color: #555;
+}
+
+/* Styling for the top navigation bar */
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #333; /* Background color of the top nav */
+  color: white;
+  padding: 10px;
+}
+
+.topnav .nav-item {
+  cursor: pointer;
+  margin: 0 20px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.topnav .nav-item.active {
+  font-weight: bold; /* Highlight the active section */
+}
+
+.topnav .nav-item:hover {
+  background-color: #555;
+}
+
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+/* App.css */
+
+/* Styles for the profile image container */
+.profile-image-container {
+  position: relative;
+  width: 150px; /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  margin: 0 auto;
+  border-radius: 50%; /* Makes the container circular */
+  overflow: hidden; /* Clips the image to the container's border */
+}
+
+/* Styles for the profile image */
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Styles for the rotating circular border */
+.circle-border {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 4px solid transparent;
+  border-top-color: #3498db; /* Blue */
+  border-radius: 50%;
+  animation: rotateBorder 4s linear infinite;
+}
+/* App.css */
+
+/* Hobbies section styles */
+.hobbies {
+  background-color: #e67e22; /* Carrot Orange */
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hobbies h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.hobbies ul {
+  list-style-type: disc; /* Use disc bullets for list items */
+  padding: 0;
+}
+
+.hobbies li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Keyframe animation for the rotating border */
+@keyframes rotateBorder {
+  from {
+    transform: rotate(0deg);
+    border-top-color: #3498db; /* Blue */
+  }
+  to {
+    transform: rotate(360deg);
+    border-top-color: #3498db; /* Blue */
+  }
+}
+
+/* Header styles */
+.header {
+  background-color: #333; /* Dark Gray */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+}
+
+/* Bio section styles */
+.bio {
+  background-color: #3498db; /* Blue */
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bio h2 {
+  font-size: 1.8rem;
+}
+
+.bio p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Education section styles */
+.education {
+  background-color: #e74c3c; /* Red */
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.education div {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #2ecc71; /* Green */
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.education h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.education p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Skills section styles */
+.skills {
+  background-color: #f1c40f; /* Yellow */
+  color: #333;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #9b59b6; /* Purple */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.skills li:hover {
+  transform: scale(1.05);
+}
+
+/* Contact section styles */
+.contact {
+  background-color: #27ae60; /* Green */
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+contact label {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+contact input[type="text"],
+contact input[type="email"],
+contact textarea {
+  font-size: 1rem;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #e74c3c; /* Red */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
